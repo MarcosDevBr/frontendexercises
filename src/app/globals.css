@@ -1,12 +1,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --input-background: #ffffff;
+  --input-foreground: #171717;
+  --input-border: #e2e8f0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --input-background: #1a1a1a;
+    --input-foreground: #ffffff;
+    --input-border: #333333;
   }
 }
 
@@ -28,6 +34,17 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+input, select, textarea {
+  background-color: var(--input-background);
+  color: var(--input-foreground);
+  border: 1px solid var(--input-border);
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+  color: var(--input-foreground);
+  opacity: 0.7;
 }
 
 a {
