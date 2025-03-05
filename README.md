@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Frontend Exercises
 
-## Getting Started
+<div align="center">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+</div>
 
-First, run the development server:
+## 📋 Sobre o Projeto
 
+Este repositório contém uma coleção de exercícios práticos de frontend desenvolvidos com Next.js, TypeScript e React. Cada exercício demonstra diferentes conceitos e práticas de desenvolvimento web moderno.
+
+## 🛠️ Tecnologias Utilizadas
+
+- Next.js 15
+- TypeScript
+- React
+- Material UI
+- Styled Components
+- Jest para testes
+
+## 🚀 Como Executar o Projeto
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/MarcosDevBr/frontendexercises.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Execute o projeto em modo de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Acesse o projeto em `http://localhost:3000`
 
-## Learn More
+## 📚 Exercícios Implementados
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Rick and Morty API
+Consumo da API do Rick and Morty para exibir informações dos personagens principais.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```typescript
+// Exemplo de uso
+const characters = await rickAndMortyService.getCharacters();
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. FIPE API
+Consulta de valores de veículos através da API da FIPE.
 
-## Deploy on Vercel
+```typescript
+// Exemplo de uso
+const vehicleValue = await fipeService.getVehicleValue(brand, model, year);
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Função de Atualização de Objeto
+Função utilitária para atualizar objetos mantendo apenas as propriedades existentes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```typescript
+// Exemplo de uso
+const result = updateData(
+  { name: "Marcos", country: "Brasil", age: 22 },
+  { country: "Japão", age: 33 }
+);
+// Resultado: { name: "Marcos", country: "Japão", age: 33 }
+```
+
+## 🧪 Testes
+
+O projeto utiliza Jest para testes unitários. Para executar os testes:
+
+```bash
+npm test
+# ou
+yarn test
+```
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── rickandmorty/
+│   ├── fipe/
+│   └── utils/
+├── services/
+│   ├── rickandmorty/
+│   └── fipe/
+└── components/
+```
+
+## 📝 Licença
+
+Copyright © 2024 [Marcos Augusto](https://github.com/MarcosDevBr)
+
+This project is MIT licensed.
+
+## 👥 Autores
+
+- Marcos Augusto - [Marcos Augusto](https://github.com/MarcosDevBr)
+---
+
+<div align="center">
+  <p>Feito com ❤️ e ☕</p>
+</div>
