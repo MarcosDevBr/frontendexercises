@@ -15,7 +15,6 @@ import {
 export function MaskPageView({ input, maskedValue, onInputChange }: IMaskPageView) {
   return (
     <Container>
-      <div>
         <Title>Demonstração de Máscara de Texto</Title>
         <Subtitle>Digite qualquer texto para ver a máscara</Subtitle>
         
@@ -40,7 +39,6 @@ export function MaskPageView({ input, maskedValue, onInputChange }: IMaskPageVie
         <Footer>
           <p>Apenas os últimos 4 caracteres permanecerão visíveis</p>
         </Footer>
-      </div>
       <Navigation>
         <NavLink href="/update">Próximo Exercício →</NavLink>
       </Navigation>

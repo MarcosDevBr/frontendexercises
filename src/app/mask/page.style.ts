@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 export const Container = styled.main`
+  display: flex;
   min-height: 100vh;
   background: linear-gradient(to bottom right, #1a202c, #2d3748);
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
