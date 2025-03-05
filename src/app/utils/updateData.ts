@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-function updateData<T extends { [key: string]: unknown }>(currentObject: T, newDataObject: Partial<T>): T {
+function updateData<T extends object>(currentObject: T, newDataObject: Partial<T>): T {
     const updatedObject = { ...currentObject };
     
     Object.keys(currentObject).forEach(key => {
